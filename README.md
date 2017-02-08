@@ -253,11 +253,11 @@ Internet Explorer does not support `@supports` 🙄 , so Grid-kiss needs to add 
 - `grid-auto-flow` ❌ [3]
 - `grid` ❌ [4]
 
-[1]: gaps are actually faked as empty zones, so you can define the gap dimension specifically by row/column. See [Gaps Dimensions](#gaps-dimensions)
+[1]: gaps are actually faked as empty zones, so you can define the gap dimension specifically by row/column.間隙實際上偽造為空區域，因此可以特定地按行/列定義間隙尺寸 See [Gaps Dimensions](#gaps-dimensions)
 
-[2]: `justify-items` and `align-items` are not used on the container level, instead use alignment helpers for each zone
+[2]: `justify-items` and `align-items` are not used on the container level, instead use alignment helpers for each zone是在容器級別使用，而是對每個區域使用對齊幫助器
 
-[3]: `grid-auto-columns`, `grid-auto-rows` and `grid-auto-flow` are not used, instead define explicitely all the zones
+[3]: `grid-auto-columns`, `grid-auto-rows` and `grid-auto-flow` are not used, instead define explicitely all the zones不使用，而是明確地定義所有區域
 
 [4]: `grid-kiss` aims to replace the `grid` property
 
@@ -279,14 +279,14 @@ Internet Explorer does not support `@supports` 🙄 , so Grid-kiss needs to add 
 
 ### How to draw a grid
 
-- Draw the different zones of your grid as shown in the example. You can use some tools like [AsciiFlow](http://asciiflow.com/).
-- Inside every zone, write a CSS selector that matches the corresponding element. It can be a `tag` name, a `.class`, an `#id`, or `any.other[valid]#selector`
+- 繪製網格的不同區域，如示例所示。你可以使用一些工具 [AsciiFlow](http://asciiflow.com/).
+- 在每個區域內，編寫一個與相應元素匹配的CSS選擇器. It can be a `tag` name, a `.class`, an `#id`, or `any.other[valid]#selector`
 - The elements matched have to be **direct descendants** of the grid element
 - Separate each row by a newline (`\n`) and give the same indentation level to every row
 - Make sure each row starts and end by a double quote `"`
-- Make sure the zone corners (`+`) are correctly aligned. Every index in the rows where a corner character is found creates a new column.
-- Do not hesitate to make large zones with unused space, it may be useful for future modifications
-- Use Insert. key and Multi-cursor if supported by your editor to draw and edit your grids easily
+- Make sure the zone corners (`+`) are correctly aligned. 找到角點字符的行中的每個索引都會創建一個新列.
+- Do not hesitate to make large zones with unused space, it may be useful for future modifications不要猶豫使用未使用的空間製作大區域，它可能對未來的修改有用
+- Use Insert. key and Multi-cursor if supported by your editor to draw and edit your grids easily使用插入。鍵和多光標（如果編輯器支持）輕鬆繪製和編輯您的網格
 
 ### Dimensions of rows
 
